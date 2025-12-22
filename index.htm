@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Georges Leclerc | Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #020617, var(--bg));
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 4rem 1.5rem 3rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: var(--muted);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover { color: var(--accent); }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    section h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    .project p {
+      color: var(--muted);
+    }
+
+    .project a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      color: var(--muted);
+      border-top: 1px solid #1f2933;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Georges Leclerc</h1>
+    <p>
+      I design and build simple, reliable software that creates real-world value.<br />
+      IT Consultant & Software Developer focused on clarity, impact, and long-term maintainability.
+    </p>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          I&apos;m an IT consultant and software developer who focuses on solving real problems with practical, maintainable solutions.
+          I believe good technology should be clear, reliable, and easy for people to adopt — not over-engineered or fragile.
+        </p>
+
+        <p>
+          My background includes modernizing systems, replacing outdated tools, and improving processes in environments where trust,
+          usability, and long-term sustainability matter. I&apos;m especially motivated by work that has a tangible impact,
+          including projects connected to public service and everyday users.
+        </p>
+
+        <p>
+          Whether I&apos;m working with a team, a client, or independently, my goal is always the same:
+          create solutions that make life easier, reduce friction, and continue delivering value well after launch.
+        </p>
+      </div>
+    </section>
+
+    <!--section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card project">
+          <h3>System Modernization Tool</h3>
+          <p>Replaced an outdated internal tool with a simpler, maintainable solution adopted by clients.</p>
+          <a href="#">View details</a>
+        </div>
+        <div class="card project">
+          <h3>Loyalty Program Analysis</h3>
+          <p>Business and IT analysis of a retail loyalty program with performance indicators.</p>
+          <a href="#">View details</a>
+        </div>
+        <div class="card project">
+          <h3>Personal Fitness Planner</h3>
+          <p>A lightweight tool to plan workouts with swimming and injury-safe cardio.</p>
+          <a href="#">View details</a>
+        </div>
+      </div>
+    </section-->
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="card">
+        <p><strong>Independent IT Consultant</strong><br />
+        Delivered software solutions, process improvements, and technical guidance for clients.</p>
+
+        <p><strong>Public Service IT Projects</strong><br />
+        Motivated by building systems that help Canadians access and keep government services.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:your@email.com">georges.leclerc@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/georgesjleclerc">linkedin.com/in/georgesjleclerc</a></p>
+        <p>GitHub: <a href="https://github.com/leclercg">github.com/leclercg</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Georges Leclerc · Built with HTML & CSS
+  </footer>
+
+</body>
+</html>
