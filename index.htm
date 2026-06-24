@@ -4,110 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Georges Leclerc | Portfolio</title>
-  <style>
-    :root {
-      --bg: #0f172a;
-      --card: #111827;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --accent: #38bdf8;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: linear-gradient(180deg, #020617, var(--bg));
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    header {
-      padding: 4rem 1.5rem 3rem;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      color: var(--muted);
-      max-width: 640px;
-      margin: 0 auto;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      margin-top: 2rem;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: var(--text);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    nav a:hover { color: var(--accent); }
-
-    main {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 2rem 1.5rem 4rem;
-    }
-
-    section {
-      margin-bottom: 4rem;
-    }
-
-    section h2 {
-      font-size: 1.75rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .card {
-      background: var(--card);
-      border-radius: 1rem;
-      padding: 1.5rem;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    }
-
-    .grid {
-      display: grid;
-      gap: 1.5rem;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    }
-
-    .project h3 {
-      margin-top: 0;
-    }
-
-    .project p {
-      color: var(--muted);
-    }
-
-    .project a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1.5rem;
-      color: var(--muted);
-      border-top: 1px solid #1f2933;
-    }
-
-    @media (max-width: 600px) {
-      header h1 { font-size: 2rem; }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
@@ -181,6 +78,23 @@
       </div>
     </section>
 
+    <section id="skills">
+      <h2>Skills & Tech</h2>
+      <div class="card">
+        <div class="skills">
+          <span class="skill">Java</span>
+          <span class="skill">Spring/Spring Boot</span>
+          <span class="skill">PHP</span>
+          <span class="skill">AWS</span>
+          <span class="skill">DevOps</span>
+          <span class="skill">REST API</span>
+          <span class="skill">Cloud migration</span>
+          <span class="skill">Accessibility</span>
+          <span class="skill">CI/CD</span>
+        </div>
+      </div>
+    </section>
+
     <section id="work-with-me">
       <h2>Work With Me</h2>
       <div class="card">
@@ -190,7 +104,6 @@
           or building a reliable tool from scratch.
         </p>
 
-
         <p><strong>How I can help:</strong></p>
         <ul>
           <li>Modernizing or replacing outdated software</li>
@@ -198,7 +111,6 @@
           <li>Analyzing business processes and identifying improvement opportunities</li>
           <li>Providing clear technical guidance and implementation support</li>
         </ul>
-
 
         <p>
           If you value clarity, long-term thinking, and solutions that actually get adopted,
